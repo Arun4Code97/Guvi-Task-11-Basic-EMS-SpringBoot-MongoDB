@@ -1,5 +1,5 @@
 <h3>Guvi Task 11</h3>
-<h4>Basic Employee Management Application which provide adding and dislaying functionalities</h4>
+<h4>Basic Employee Management Application which provides adding and dislaying employess functionalities</h4>
 <p>For <strong>Html</strong> response from <strong>MVC Controller</strong>> </p>
 <p>Click <a href= "http://localhost:8080/employee/addEmployee" }">here</a> for adding employee</p>
 <br>
