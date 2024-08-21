@@ -6,3 +6,5 @@
 <p>For <strong>JSON</strong> response from <strong>REST Controller</strong> </p>
 <p>Click <a href="http://localhost:8080/employee/displayAll">here</a> for displaying all employees</p>
 <p>Click <a href=http://localhost:8080/employee/display>here</a> for displaying an employee. Kindly enter path Variable ID in the url. For example - http://localhost:8080/employee/display<strong>/5</strong> </p>
+
+<p> Please refer <strong>output recordings Video</strong> in the repository</p>
