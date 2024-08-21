@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"
+    xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Management - Form page</title>
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <style>
+    label{
+    width:160px;
+    }
+    p{
+    margin-left:160px;
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h3 class="text-center mt-3 mb-3 "> Add Employee Form</h3>
+    <form  th:object="${newEmployee}" th:action="@{/employee/addEmployee}" method="post">
+        <label >Employee ID  </label>
+        <input type="text" th:field="*{id}" aria-label="employeeId"/>
+        <br>
+        <div    th:if="${#fields.hasErrors('id')}" >
+            <p class="text-danger" th:errors="*{id}"></p>
+        </div>
+        <p class="text-danger" th:if="${existEmployeeId != null}" th:text="'Employee ID ' + ${existEmployeeId} + ' already exists'"></p>
+        <br>
+
+        <label >Employee Name </label>
+        <input  type="text" th:field="*{name}" aria-label="employeeName"/>
+        <br>
+        <div    th:if="${#fields.hasErrors('name')}">
+            <p class="text-danger" th:errors="*{name}"></p>
+        </div>
+        <br>
+
+        <label>Employee Email  </label>
+        <input  type="text" th:field="*{email}" aria-label="employeeEmail"/>
+        <br>
+        <div    th:if="${#fields.hasErrors('email')}">
+            <p class="text-danger" th:errors="*{email}"></p>
+        </div> <br>
+
+        <label>Employee Location  </label>
+        <input  type="text" th:field="*{location}" aria-label="employeeEmail"/>
+        <br>
+        <div    th:if="${#fields.hasErrors('location')}">
+            <p class="text-danger" th:errors="*{location}"></p>
+        </div> <br>
+
+        <input class="ml-1 btn btn-secondary" type="submit" value="Add Employee">
+    </form>
+
+</div>
+</body>
+</html>

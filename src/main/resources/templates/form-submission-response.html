@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Employee Submission Page</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <style>
+        span{
+        font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container  align-items-center">
+    <h4 class="mt-3 mb-3 text-success"> Added the employee details successfully!!</h4>
+    <p> Id      : <span  th:text="${savedEmployee.id}"></span></p>
+    <p> Name    : <span  th:text="${savedEmployee.name}"></span></p>
+    <p> Email   : <span  th:text="${savedEmployee.email}"></span></p>
+    <p> Location: <span  th:text="${savedEmployee.location}"></span></p>
+    <br> <br>
+    <p>Click <a th:href="@{/employee}">here</a> for returning to Employee Management Home Page</p>
+</div>
+</body>
+</html>
+
