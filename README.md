@@ -1,5 +1,5 @@
 <h3>Guvi Task 11</h3>
-<h4>Basic Employee Management Application which provides adding and dislaying employees functionalities</h4><br>
+<h4>Basic Employee Management Application which provides adding and dislaying employees functionalities</h4>
 <p> Please refer <strong>output recordings Video</strong> in the repository</p>
 <br>
 <p>For <strong>Html</strong> response from <strong>MVC Controller</strong> </p>
